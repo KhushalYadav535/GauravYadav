@@ -6,19 +6,19 @@ const Contact = () => {
         {
             icon: <Mail className="w-6 h-6" />,
             label: "Email",
-            value: "dr.gaurav@example.com",
+            value: "gyadav12998@gmail.com",
             helper: "Typically replies within 24 hours"
         },
         {
             icon: <Phone className="w-6 h-6" />,
             label: "Phone",
-            value: "+91 98765 43210",
+            value: "+91 83038 12308",
             helper: "Available Mon - Sat, 10am to 7pm"
         },
         {
             icon: <MapPin className="w-6 h-6" />,
             label: "Location",
-            value: "New Delhi, India",
+            value: "Prayagraj, Uttar Pradesh",
             helper: "Open to relocation for residency"
         }
     ];

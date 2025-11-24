@@ -8,23 +8,44 @@ gsap.registerPlugin(ScrollTrigger);
 const milestones = [
     {
         title: "High School",
-        location: "India",
-        year: "2017",
-        desc: "Completed secondary education with distinction in sciences.",
+        location: "Prayagraj, Uttar Pradesh",
+        year: "2011",
+        desc: "Completed secondary education with distinction and strong grounding in core sciences.",
         tag: "Foundation"
     },
     {
-        title: "Intermediate",
-        location: "India",
-        year: "2017-2018",
-        desc: "Focused on advanced biology and chemistry streams to prepare for medical entrance.",
-        tag: "Intermediate"
+        title: "Intermediate (12th)",
+        location: "Prayagraj, Uttar Pradesh",
+        year: "2011-2013",
+        desc: "Explored advanced biology, chemistry and physics to prepare for medical entrance examinations.",
+        tag: "Higher Secondary"
+    },
+    {
+        title: "B.Sc Year 1",
+        location: "Prayagraj, Uttar Pradesh",
+        year: "2014-2015",
+        desc: "Laid the academic base in life sciences, human physiology, and research methodology.",
+        tag: "Graduation"
+    },
+    {
+        title: "B.Sc Year 2",
+        location: "Prayagraj, Uttar Pradesh",
+        year: "2015-2016",
+        desc: "Dove deeper into biochemistry, pathology, and lab-based diagnostic techniques.",
+        tag: "Graduation"
+    },
+    {
+        title: "B.Sc Year 3",
+        location: "Prayagraj, Uttar Pradesh",
+        year: "2016-2017",
+        desc: "Completed the bachelor’s program with a focus on clinical applications and internships.",
+        tag: "Graduation"
     },
     {
         title: "BTC",
-        location: "India",
+        location: "Prayagraj, Uttar Pradesh",
         year: "2017-2019",
-        desc: "Basic Training Certificate, building foundational skills.",
+        desc: "Basic Training Certificate, building foundational teaching and mentorship skills.",
         tag: "Training"
     },
     {
