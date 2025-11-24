@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neonBlue: #00f3ff;
+  --color-neonTeal: #00ff9d;
+  --color-deepSpace: #0a0a12;
+  --color-glass: rgba(255, 255, 255, 0.1);
+
+  --font-sans: 'Inter', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-deepSpace text-white overflow-x-hidden;
+    font-family: var(--font-sans);
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(0, 243, 255, 0.08), transparent 35%),
+      radial-gradient(circle at 80% 0%, rgba(0, 255, 157, 0.08), transparent 35%),
+      radial-gradient(circle at 50% 60%, rgba(255, 255, 255, 0.06), transparent 55%);
+    background-color: #04050a;
+    min-height: 100vh;
+    position: relative;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cg fill='none' stroke='rgba(255,255,255,0.02)' stroke-width='1'%3E%3Cpath d='M0 80h160M80 0v160'/%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.6;
+  }
+}
+
+:root {
+  --shadow-neon: 0 6px 25px rgba(0, 243, 255, 0.16), 0 2px 8px rgba(0, 255, 157, 0.08);
+}
+
+@layer components {
+  .glass-card {
+    background: var(--color-glass);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.12);
+    box-shadow: 0 10px 40px rgba(3, 5, 20, 0.65);
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .glass-card::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    border-radius: inherit;
+    border: 1px solid rgba(255,255,255,0.05);
+    pointer-events: none;
+  }
+
+  .neon-text {
+    color: var(--color-neonBlue);
+    filter: drop-shadow(0 0 10px rgba(0, 243, 255, 0.5));
+  }
+
+  .neon-border {
+    border: 1px solid rgba(0, 243, 255, 0.5);
+    box-shadow: 0 0 15px rgba(0, 243, 255, 0.3);
+  }
+
+  .shadow-neon {
+    box-shadow: var(--shadow-neon);
+  }
+
+  .tag-pill {
+    @apply inline-flex items-center gap-2 rounded-full bg-white/5 border border-white/10 text-xs uppercase tracking-[0.2em] px-4 py-1 text-gray-300;
+  }
+
+  .section-shell {
+    @apply relative border border-white/5 rounded-[2rem] p-10 bg-white/5 backdrop-blur-xl shadow-[0_40px_120px_rgba(4,5,20,0.45)];
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a12;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00f3ff;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00ff9d;
+}
